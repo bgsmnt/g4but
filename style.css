@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+  }
+
+  .bg {
+    background-image: url("bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#scroll-text {
+    animation: scroll 5s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    color: blue;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
